@@ -32,12 +32,38 @@ li {
 
 .logotipoH {
     margin-left: 20%;
-    width: 70%;
-    height: 100%;
-
+    width: 50%;
+    height: 80%;
 } 
 
 div {
 margin: 10px;
 color:rgb(10, 65, 31);
 }
+
+img {
+width: 30%;
+margin: calc(10%/6)
+}
+
+a {
+    color:#3e7946;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgreen;
+    text-decoration: underline;
+
+}
+
+nav,h2 {
+    text-transform: uppercase;
+    color:#3e7946;
+    border-bottom: 2px solid #3e7946;
+    width: 30%;
+    margin-left: calc(10%/6);
+    padding: 1em 0;
+}
+
+
