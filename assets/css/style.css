@@ -10,6 +10,8 @@
 
 }
 
+@media (min-width: 768px) {
+
 #menu-h {
     position: fixed;
     top: 0;
@@ -21,12 +23,10 @@
 #menu-h ul {
     max-width: 800px;
     list-style: none;
-    padding: 0;
 }
 
 #menu-h ul li {
     display: inline;
-
 }
 
 #menu-h ul li a {
@@ -40,7 +40,7 @@
 #menu-h ul li:last-child a {
     float: right;
     background-color: #098119;
-}
+}  
 
 #menu-h ul li a:hover {
     background-color: #098119;
@@ -111,13 +111,15 @@ h2 {
     text-align: center;
     font-size: .9rem;
     color: #292929aa;
-   min-width: 1.2rem;
-   padding:6.5px;
+    min-width: 1.2rem;
+    padding: 6.5px;
 }
+
 .card span {
     margin-top: 10px;
-    font-weight: bold ;
+    font-weight: bold;
 }
+
 .card button {
     background-color: #032b09;
     color: #fff;
@@ -131,33 +133,73 @@ h2 {
     cursor: pointer;
 }
 
-.icons ul{
-    display:flex;
-    justify-content:space-evenly;
+.container-contatos ul {
+    background-color: #ecf3ed;
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    padding: 0;
+}
+
+.container-contatos ul li {
+    display: flex;
     align-items: center;
-    list-style: none; 
 }
 
-.icons p {
-    margin-bottom: auto;
+.container-contatos p {
+    text-transform: uppercase;
+    color: #0f0f0f;
 }
-.icons li{
-    display: inline;
-    margin: 0px;
-}
-.icons li a{
-    display: inline-block;
+.container-contatos li img {
+  width: 20px;
+  margin-right: 10px;
 }
 
-.icons li img {
-    width: 100%;
-    padding: 10px;
+.container-contatos li:nth-child(2) {
+    flex: 1; 
 }
 
-footer {
-    background-color: rgb(73, 72, 72);
-    color: #098119;
+.container-contatos li:nth-child(3) {
+    flex: 2; 
+}
+
+.container-contatos li:nth-child(4) {
+    flex: 3; 
+}
+
+.separador {
+    color: #3e7946;
+    border-bottom: 2px solid #3e7946;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.horarios ul {
+ display: grid;
+ list-style-type: none;
+ padding: 20px;
+ box-shadow: 4px 4px 12px #aaaa;
+}
+
+.redes-sociais {
     text-align: center;
-    width: 100%;
-    padding: 10px;
+    margin: 20px 0;
+}
+
+.redes-sociais ul li {
+    display:inline-block;
+    margin: 0 10px;
+}
+
+.redes-sociais ul li img {
+    width: 30px;
+}
+
+footer p{
+    background-color: rgb(73, 72, 72);
+    color:  #098119;
+    align-items: center;
+    text-align: center;
+}
 }
